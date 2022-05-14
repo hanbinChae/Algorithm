@@ -23,7 +23,7 @@ def solution(n, arr1, arr2):
         bin_arr = bin_arr.replace('0'," ")
         bin_arr = bin_arr.replace('1',"#")
         map2.append(bin_arr)
-#결과값 구현
+#결과값 구현 
     for i in range(len(map1)):
         for j in range(len(map2)):
             if map1[i][j] == "#" or map2[i][j] =="#":
