@@ -14,7 +14,7 @@ def solution(n, arr1, arr2):
         bin_arr = bin_arr.replace('0'," ")
         bin_arr = bin_arr.replace('1',"#")
         map1.append(bin_arr)
-    
+
     for j in arr2:
         bin_arr = bin(j)[2:]
         for cnt in range(n):
