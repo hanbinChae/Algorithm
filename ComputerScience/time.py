@@ -1,10 +1,12 @@
 import time
 start = time.time()
 score = [70,60,50,80,90,40]
-max = score[0]
+maxi = score[0]
 
 for i in score:
-    if max <i:
-        max = i;
-print(max)
-print("Time:",time.time()-start)
+    if maxi <i:
+        maxi = i;
+        
+print(f"{max(score)}\nTime1 : {time.time()-start}")
+print(maxi)
+print("Time2 :",time.time()-start)
