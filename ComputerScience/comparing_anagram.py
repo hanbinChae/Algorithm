@@ -1,4 +1,3 @@
-
 def same(a,b):
     a_li = []
     b_li = []
