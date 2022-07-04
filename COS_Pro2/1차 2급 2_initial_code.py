@@ -10,9 +10,5 @@ def solution(price,grade):
             answer -= price
     return int(answer)
 
-
-
-
-
 ret = solution(price,grade);
 print(ret)
