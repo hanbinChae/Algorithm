@@ -2,9 +2,13 @@
 #import math
 
 def solution(scores):
-    #여기에 코드를 작성해주세요.
     answer = 0
-    return answer
+    sc_max = max(scores)
+    sc_min = min(scores)
+    scores.remove(sc_max)
+    scores.remove(sc_min)
+    answer = sum(scores)/len(scores)
+    return int(answer)
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
 scores1 = [35, 28, 98, 34, 20, 50, 85, 74, 71, 7]

@@ -10,17 +10,17 @@ def solution(member_age, transportation):
 		child_expense = 45000
 
 	if len(member_age) >= 10:
-		adult_expense = @@@
-		child_expense = @@@
+		adult_expense -= adult_expense*(10/100)
+		child_expense -= child_expense*(20/100)
 
 	total_expenses = 0
 	for age in member_age:
-		if @@@:
+		if age>=20:
 			total_expenses += adult_expense
 		else:
 			total_expenses += child_expense
 
-	return total_expenses
+	return int(total_expenses)
 
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
