@@ -7,8 +7,9 @@ def solution(purchase):
             total += 30000
         elif p >= 400000:
             total += 20000
-        else:
+        elif p >= 200000:
             total += 10000
+        print(p,":",total)
     return total
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다. 아래 코드는 잘못된 부분이 없으니, solution함수만 수정하세요.
