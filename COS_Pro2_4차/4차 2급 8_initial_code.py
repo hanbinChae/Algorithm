@@ -2,9 +2,9 @@ def solution(n, votes):
     arr = [0] * (n + 1)
     for vote in votes:
         arr[vote] += 1
-
+    print(arr)
     for i in range(1, n+1):
-        if arr[i] > n/2:
+        if arr[i] >= len(votes)/2 and arr[i]==max(arr):
             return i
     return -1
 

@@ -1,9 +1,14 @@
 # 다음과 같이 import를 사용할 수 있습니다.
 # import math
 
+from winsound import SND_NOWAIT
+
+
 def solution(scores, cutline):
-    # 여기에 코드를 작성해주세요.
     answer = 0
+    for s in scores:
+        if cutline<=s:
+           answer+=1; 
     return answer
 
 # 아래는 테스트케이스 출력을 해보기 위한 코드입니다.
