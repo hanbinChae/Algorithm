@@ -1,7 +1,7 @@
 def solution(taekwondo, running, shooting):
     answer = 0
     if taekwondo >= 25:
-    	answer += @@@
+    	answer += 250
     else:
     	answer += taekwondo * 8
     answer += 250 + (60 - running) * 5
@@ -11,7 +11,7 @@ def solution(taekwondo, running, shooting):
     	if s == 10:
     		count += 1
     if count >= 7:
-    	answer += @@@
+    	answer += 100
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.

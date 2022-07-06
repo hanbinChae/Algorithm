@@ -23,9 +23,9 @@ def func_c(time_table):
 
 def solution(time_table):
     answer = 0
-    first_class = func_@@@(@@@)
-    last_class = func_@@@(@@@)
-    answer = func_@@@(@@@)
+    first_class = func_c(time_table)
+    last_class = func_a(time_table)
+    answer = func_b(time_table,first_class,last_class)
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.

@@ -2,8 +2,13 @@
 #import math
 
 def solution(time_table, n):
-    #여기에 코드를 작성해주세요.
     answer = 0
+    temp = []
+    for idx_t in range(len(time_table)):
+        try:
+            temp.append(time_table[idx_t]+time_table[idx_t+n])
+        except:
+            answer = max(temp)
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.

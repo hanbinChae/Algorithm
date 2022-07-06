@@ -1,9 +1,21 @@
 #다음과 같이 import를 사용할 수 있습니다.
 #import math
 
+from audioop import reverse
+
+
 def solution(score):
-	# 여기에 코드를 작성해주세요.
     answer = []
+    for idx_s in range(len(score)):
+        rank=1
+        for each_s in score:
+            if score[idx_s] < each_s:
+                rank+=1
+        answer.append(rank)
+            
+            # elif answer[idx_s] == answer[idx_s+1]:
+            #     answer[idx_s-1] = answer[idx_s]
+                
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
