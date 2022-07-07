@@ -2,8 +2,22 @@
 #import math
 
 def solution(cards):
-    #여기에 코드를 작성해주세요.
     answer = 0
+    color = [0]*len(cards)
+    for c in cards:
+        if c[0] == "red":
+            answer+=int(c[1])
+            color[0]+=1
+        elif c[0] == "blue":
+            answer+=int(c[1])
+            color[1]+=1
+        elif c[0] == "black":
+            answer+=int(c[1])
+            color[2]+=1
+    if color[0] ==3 or color[1]==3 or color[2] ==3:
+        answer *= 3
+    elif color[0] ==2 or color[1]==2 or color[2] ==2:
+        answer *=2
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
