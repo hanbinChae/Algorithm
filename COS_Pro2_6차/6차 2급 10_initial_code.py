@@ -1,7 +1,9 @@
 def solution(weight, boxes):
     answer = 0
+
     for x in boxes:
-        if @@@:
+        if x>int(weight+weight*(10/100)) or x<int(weight-weight*(10/100)):
+            print(x)
             answer += 1
     return answer
 
