@@ -1,13 +1,24 @@
 import sys
-# 미완
-temp = int(input())
-stack = list(sys.stdin.readline().split())
-temp2 = int(input())
+# 이분 탐색
+n = sys.stdin.readline()
+stack = sorted(sys.stdin.readline().split())
+m = sys.stdin.readline()
 x_list = list(sys.stdin.readline().split())
 
-for i in range(temp2):
-    if x_list[i] in stack:
-        print(1)
+def binary(x,stack,start,end):
+    if start > end:
+        return 0
+    mid = (start+end)//2
+    if x == stack[mid]:
+        return 1
+    elif x < stack[mid]:
+        return binary(x,stack,start,mid-1)
     else:
-        print(0)
+        return binary(x,stack,mid+1,end)
+
+
+for x in x_list:
+    start = 0
+    end = len(stack)-1
+    print(binary(x,stack,start,end))
             
