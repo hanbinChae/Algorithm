@@ -1,3 +1,4 @@
+# VPS 검사, 스택
 for _ in range(int(input())):
     x = list(input())
     stack = []
