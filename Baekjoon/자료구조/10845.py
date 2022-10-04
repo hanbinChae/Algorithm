@@ -1,3 +1,4 @@
+# 큐 Queue
 import sys
 queue = []
 
